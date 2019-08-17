@@ -13,6 +13,15 @@ import favicon16 from "../assets/favicons/favicon-16x16.png"
 import favicon32 from "../assets/favicons/favicon-32x32.png"
 import RecommendationSection from "../components/RecommendationSection"
 
+const helloString = () => {
+  const lang = navigator.language || navigator.browserLanguage
+  if (lang.includes("se")) {
+    return "Hej"
+  } else {
+    return "Hi"
+  }
+}
+
 const IndexPage = ({ data }) => (
   <div className="template-wrapper">
     <div className="index">
@@ -50,7 +59,7 @@ const IndexPage = ({ data }) => (
       />
       <div className="main">
         <h2>
-          Hi, I'm <span className="bold">Gus Fune</span>
+          {helloString()}, I'm <span className="bold">Gus Fune</span>
         </h2>
 
         <h3 className="bold">

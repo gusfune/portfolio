@@ -14,9 +14,12 @@ import favicon32 from "../assets/favicons/favicon-32x32.png"
 import RecommendationSection from "../components/RecommendationSection"
 
 const helloString = () => {
-  const lang = navigator.language || navigator.browserLanguage
-  if (lang.includes("se")) {
-    return "Hej"
+  if (navigator) {
+    const lang = navigator.language || navigator.browserLanguage
+    if (lang.includes("se")) {
+      return "Hej"
+    } else {
+    }
   } else {
     return "Hi"
   }

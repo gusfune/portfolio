@@ -5,14 +5,17 @@ import Helmet from "react-helmet"
 import CookieConsent from "react-cookie-consent"
 import PropTypes from "prop-types"
 
+import { connect } from "react-redux"
+
 import About from "../components/About"
+import DarkSwitch from "../components/DarkSwitch"
 import Links from "../components/Links"
 import profileImage from "../assets/images/gusfune.jpg"
 import favicon16 from "../assets/favicons/favicon-16x16.png"
 import favicon32 from "../assets/favicons/favicon-32x32.png"
 import "./Layout.scss"
 
-const Layout = ({ children, location }) => (
+const Layout = ({ children, isDarkMode, dispatch }) => (
   <StaticQuery
     query={graphql`
       query MetadataQuery {
@@ -47,30 +50,16 @@ const Layout = ({ children, location }) => (
           link={[
             { rel: "icon", type: "image/png", sizes: "16x16", href: favicon16 },
             { rel: "icon", type: "image/png", sizes: "32x32", href: favicon32 },
-            {
-              rel: "stylesheet",
-              type: "text/css",
-              charset: "UTF-8",
-              href:
-                "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css",
-            },
-            {
-              rel: "stylesheet",
-              type: "text/css",
-              sizes: "32x32",
-              href:
-                "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css",
-            },
           ]}
         />
-        <div className="index">
+        <div className={("index", isDarkMode ? "theme-dark" : "theme-light")}>
           <div className="main">{children}</div>
-
           <div className="aside">
             <div className="top">
               <About />
             </div>
             <div className="bottom">
+              <DarkSwitch />
               <Links />
             </div>
           </div>
@@ -96,4 +85,9 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default connect(
+  state => ({
+    isDarkMode: state.app.isDarkMode,
+  }),
+  null
+)(Layout)

@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "./About.scss"
 
-export default () => (
+const About = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -56,3 +56,4 @@ export default () => (
     )}
   />
 )
+export default About

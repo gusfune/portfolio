@@ -1,8 +1,10 @@
 @import "../assets/scss/main.scss";
 
 .sidebar-links {
-  color: $grey-color;
-  border-top: 1px solid $border-color-dark;
+  @include themify($themes) {
+    color: themed("sideColor");
+    border-top: 1px solid themed("borderColorDark");
+  }
   padding-top: 20px;
 
   ul.icons-list {
@@ -22,12 +24,15 @@
     }
   }
   a {
-    color: $grey-color;
+    color: inherit;
+
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
 
     &:hover {
-      color: white;
+      @include themify($themes) {
+        color: themed("mainContrast");
+      }
     }
   }
 
@@ -36,6 +41,5 @@
     transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease; /* Fade to color for Chrome and Safari */
     cursor: normal;
-    color: $grey-color;
   }
 }

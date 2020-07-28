@@ -23,7 +23,7 @@ const About = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <div className="about">
         <div className="image">
           <Img
@@ -34,9 +34,9 @@ const About = () => (
         </div>
         <div className="bio">
           <p>
-            I’m an experienced product manager who can fix hard-to-find bugs,
-            test design changes in the browser, and automate anything my team
-            needs to get done faster.
+            I’m an experienced CTO who can fix hard-to-find bugs, test design
+            changes in the browser, and automate anything my team needs to get
+            done faster.
           </p>
           <p>
             I’ve delivered over 100 projects for clients like 3M, Coca-Cola,

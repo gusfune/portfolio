@@ -16,8 +16,7 @@ const IndexPage = ({ data }) => (
       </h2>
 
       <h3 className="bold">
-        I'm a highly technical Web & Mobile Product Manager who delivered over
-        100 products to scale.
+        I'm a CTO who delivered over 100 products to scale.
       </h3>
       <ProjectsSection />
       <RecommendationSection />

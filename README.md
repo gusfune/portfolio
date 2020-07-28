@@ -1,15 +1,12 @@
-# gatsby-starter-2column-portfolio
+# Hi, I'm Gus Fune
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ae5b07e7-cdb0-4752-bb22-d2cee97134dd/deploy-status)](https://app.netlify.com/sites/gusfune/deploys)
+I'm a CTO who delivered over 100 products to scale. Currently I am leading the product & dev team of [Courate](https://www.courate.co/) a new e-commerce startup in Stockholm 🇸🇪
 
-A minimalistic portfolio starter for [Gatsby](https://www.gatsbyjs.org/) with a 2 column layout.
+I can fix hard-to-find bugs, test design changes in the browser, and automate anything my team needs to get done faster.
 
-![website-preview](https://user-images.githubusercontent.com/2060518/38455405-416af23e-3a95-11e8-92f9-ae27f7b601a6.png)
+I’ve delivered over 100 projects for clients like 3M, Coca-Cola, Behold Studios, BMW, Heineken, McDonald's and Motorola. I’ve also worked with early-stage startups on everything from product research to hiring, team-building, and even accounting.
 
-This project is based on [gatsby-starter-2column-portfolio](https://github.com/praagyajoshi/gatsby-starter-2column-portfolio) by [praagyajoshi](https://github.com/praagyajoshi) with a series of customizations:
+If you want to get in touch:
 
-- Updated from Gatsby v1 to v2.
-- Reorganized components according to Gatsby V2 and my personal needs.
-- Linked project to Contentful API to pull Projects dynamically.
-- Added Redux to control states.
-- Has a neat dark theme working around.
+- Email: gusfune@protonmail.com (no soliciting / ej reklam)
+- Twitter: [@gusfune](https://www.twitter.com/gusfune)

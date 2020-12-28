@@ -8,5 +8,5 @@ I’ve delivered over 100 projects for clients like 3M, Coca-Cola, Behold Studio
 
 If you want to get in touch:
 
-- Email: gusfune@protonmail.com (no soliciting / ej reklam)
+- Email: gus@hey.com (no soliciting / ej reklam)
 - Twitter: [@gusfune](https://www.twitter.com/gusfune)
